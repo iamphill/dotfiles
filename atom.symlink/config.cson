@@ -5,6 +5,9 @@
     showOnStartup: false
   core:
     projectHome: "/Users/phil/src"
+    disabledPackages: [
+      "vim-mode"
+    ]
   editor:
     invisibles: {}
     scrollPastEnd: true
