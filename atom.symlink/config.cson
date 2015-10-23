@@ -1,0 +1,19 @@
+"*":
+  "exception-reporting":
+    userId: "ea0e704d-8f7a-2151-9e47-75acc3738dc9"
+  welcome:
+    showOnStartup: false
+  core:
+    projectHome: "/Users/phil/src"
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    tabType: "soft"
+    showIndentGuide: true
+    fontFamily: "Hack"
+  minimap:
+    plugins:
+      "git-diff": true
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "one-dark-ui": {}
