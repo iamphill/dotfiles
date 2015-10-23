@@ -9,3 +9,8 @@ set softtabstop=2
 set linespace=1
 set guifont=Monaco:h15
 set background=dark
+
+"Load all plugins
+call plug#begin('~/.vim/plugged')
+
+call plug#end()
