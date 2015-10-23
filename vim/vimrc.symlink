@@ -2,15 +2,35 @@ syntax on
 
 filetype plugin indent on
 
+let &t_Co=256
+
 set number
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set linespace=1
-set guifont=Monaco:h15
+set guifont=Hack:h14
 set background=dark
+set mousemodel=extend
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:neocomplcache_enable_at_startup = 1
 
 "Load all plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'Shougo/neocomplete.vim'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'bling/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'gregsexton/MatchTag'
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
+
+"Auto-run some plugins
+autocmd VimEnter * NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
