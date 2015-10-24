@@ -1,3 +1,5 @@
+#!/bin/sh
+
 if test $(which brew)
 then
   if test ! $(which rbenv)
