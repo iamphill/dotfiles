@@ -2,4 +2,4 @@
 code() {
   cd $PROJECTS/$1;
 }
-compctl -W ~/src -/ code
+compctl -W ~/Projects -/ code
