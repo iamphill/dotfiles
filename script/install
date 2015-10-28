@@ -2,4 +2,9 @@
 
 set -e
 
+echo "==> Running all installers..."
+
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+
+echo "==> All installed!"
+echo "==> Make sure you run script/boostrap"

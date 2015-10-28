@@ -1,6 +1,8 @@
 #!/bin/sh
 
-if test ! $(which nvm)
+export NVM_DIR="$HOME/.nvm"
+
+if ! [ -e "$NVM_DIR/nvm.sh" ]
 then
   echo "==> Installing NVM..."
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
@@ -8,14 +10,14 @@ then
   echo "==> NVM installed!"
 fi
 
-if test $(which nvm)
+if ! [ -e "$NVM_DIR/nvm.sh" ]
 then
-  node_version="$(node -v)"
   version_install="4.0.0"
-  if test ! $(echo "$node_version" | grep -q "version_install")
+
+  if test ! $(node -v | grep "$version_install")
   then
     echo "==> Setting default Node version to $node_version"
-    export NVM_DIR="$HOME/.nvm"
+
     source "$NVM_DIR/nvm.sh"
 
     nvm install $node_version

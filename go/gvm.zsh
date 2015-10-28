@@ -1,1 +1,1 @@
-export PATH="$PATH:/Users/phil/.gvm/bin"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
