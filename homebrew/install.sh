@@ -13,4 +13,10 @@ then
     brew install hub
     echo "==> Installed hub!"
   fi
+
+  brew install caskroom/cask/brew-cask
+  brew tap caskroom/fonts
+  brew cask install font-hack
+  brew cask install font-fira-mono
+  brew cask install font-meslo-lg-for-powerline
 fi
