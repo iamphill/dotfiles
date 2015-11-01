@@ -13,7 +13,7 @@
     scrollPastEnd: true
     tabType: "soft"
     showIndentGuide: true
-    fontFamily: "Hack"
+    fontFamily: "Fira Code"
   minimap:
     plugins:
       "git-diff": true
