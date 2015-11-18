@@ -20,12 +20,9 @@ then
 
   version_install="2.2.3"
 
-  if ! [ "$(ruby -v | grep $version_install)" ]
-  then
-    echo "==> Installing Ruby $version_install"
-    rbenv install $version_install
-    rbenv global $version_install
+	echo "==> Installing Ruby $version_install"
+	rbenv install $version_install --skip-existing
+	rbenv global $version_install
 
-    echo "==> Ruby version set to $version_install"
-  fi
+	echo "==> Ruby version set to $version_install"
 fi
