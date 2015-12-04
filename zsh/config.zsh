@@ -1,4 +1,4 @@
-ZSH_THEME="agnoster"
+ZSH_THEME="alanpeabody"
 
 DEFAULT_USER="phil"
 
