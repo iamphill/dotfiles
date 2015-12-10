@@ -1,6 +1,6 @@
 [user]
 	name = Phil Hughes
-	email = me@iamphill.com
+	email = phil.hughes@yoma.co.uk
 
 [alias]
   lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -16,8 +16,14 @@
   ui = true
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/phil/.gitignore
   editor = vim
 
 [help]
   autocorrect = 1
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
