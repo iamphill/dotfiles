@@ -2,8 +2,6 @@ syntax on
 
 filetype plugin indent on
 
-let &t_Co=256
-
 set number
 set tabstop=2
 set shiftwidth=2
@@ -28,9 +26,12 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/MatchTag'
 Plug 'airblade/vim-gitgutter'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
 "Auto-run some plugins
 autocmd VimEnter * NERDTree
 let g:nerdtree_tabs_open_on_console_startup=1
+
+colorscheme base16-default
