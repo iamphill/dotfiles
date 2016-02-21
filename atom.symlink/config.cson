@@ -1,23 +1,22 @@
 "*":
-  "exception-reporting":
-    userId: "ea0e704d-8f7a-2151-9e47-75acc3738dc9"
-  welcome:
-    showOnStartup: false
   core:
-    projectHome: "/Users/phil/Projects"
     disabledPackages: [
       "vim-mode"
     ]
+    projectHome: "/Users/phil/Projects"
   editor:
+    fontSize: 15
     invisibles: {}
     scrollPastEnd: true
-    tabType: "soft"
     showIndentGuide: true
-    fontFamily: "Hack"
-    fontSize: 15
+    tabType: "soft"
+  "exception-reporting":
+    userId: "ea0e704d-8f7a-2151-9e47-75acc3738dc9"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
   minimap:
     plugins:
       "git-diff": true
-  "file-watcher":
-    promptWhenFileHasChangedOnDisk: false
   "one-dark-ui": {}
+  welcome:
+    showOnStartup: false
