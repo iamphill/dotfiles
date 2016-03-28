@@ -10,6 +10,13 @@ set linespace=1
 set guifont=Hack:h14
 set background=dark
 set mousemodel=extend
+set updatetime=250
+
+"MacVim config
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -27,6 +34,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/MatchTag'
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'Haml'
+Plug 'airblade/vim-gitgutter'
+Plug 'valloric/youcompleteme'
 
 call plug#end()
 
