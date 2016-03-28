@@ -17,6 +17,7 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
+set showtabline=2
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -38,12 +39,14 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'Haml'
 Plug 'airblade/vim-gitgutter'
-Plug 'valloric/youcompleteme'
+Plug 'shougo/neocomplete.vim'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
 "Auto-run some plugins
 autocmd VimEnter * NERDTree
 let g:nerdtree_tabs_open_on_console_startup=1
+let g:neocomplete#enable_at_startup = 1
 
 colorscheme base16-default
