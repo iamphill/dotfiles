@@ -14,9 +14,16 @@
     userId: "ea0e704d-8f7a-2151-9e47-75acc3738dc9"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  "git-projects":
+    rootPath: "/Users/phil/Projects"
+    sortBy: "Latest modification date"
   minimap:
     plugins:
       "git-diff": true
   "one-dark-ui": {}
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "tool-bar-almighty": {}
   welcome:
     showOnStartup: false
