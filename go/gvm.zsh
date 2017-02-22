@@ -1,1 +1,1 @@
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+export PATH=$PATH:/usr/local/go/bin

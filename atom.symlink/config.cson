@@ -2,28 +2,51 @@
   core:
     disabledPackages: [
       "vim-mode"
+      "git-projects"
+      "travis-ci-status"
+      "linter-scss-lint"
+      "linter-eslint"
+      "vim-mode-plus"
     ]
     projectHome: "/Users/phil/Projects"
+    telemetryConsent: "limited"
+    useCustomTitleBar: true
   editor:
-    fontSize: 15
+    fontFamily: "SF Mono"
+    fontSize: 12
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
-    tabType: "soft"
   "exception-reporting":
     userId: "ea0e704d-8f7a-2151-9e47-75acc3738dc9"
+  "file-icons": {}
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   "git-projects":
     rootPath: "/Users/phil/Projects"
     sortBy: "Latest modification date"
+  "gitlab-ci-status":
+    privateToken: "9TyzuxBRBti1vijWD2o_"
+  linter:
+    lintOnFly: false
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
+  "merge-conflicts": {}
   minimap:
     plugins:
       "git-diff": true
   "one-dark-ui": {}
+  tabs:
+    enableMruTabSwitching: false
+    enableVcsColoring: true
   "tool-bar":
     iconSize: "16px"
     position: "Left"
   "tool-bar-almighty": {}
+  "vim-mode-plus":
+    ignoreCaseForSearch: true
   welcome:
     showOnStartup: false
+".ini.source":
+  editor:
+    tabLength: 24

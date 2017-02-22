@@ -2,8 +2,15 @@ syntax on
 
 filetype plugin indent on
 
+set ic
 set number
+set ruler
+set ignorecase
+set incsearch
+set nostartofline
+set scrolloff=3
 set tabstop=2
+set expandtab
 set shiftwidth=2
 set softtabstop=2
 set linespace=1
@@ -11,6 +18,9 @@ set guifont=Hack:h14
 set background=dark
 set mousemodel=extend
 set updatetime=250
+set backspace=2
+set wildignore+=*\\node_modules\\**
+:set colorcolumn=100
 
 "MacVim config
 set guioptions-=r
@@ -21,7 +31,14 @@ set showtabline=2
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|public\'
+
 let g:neocomplcache_enable_at_startup = 1
+
+nnoremap <Leader>c :let @*=expand('%')<CR>
+
+set splitbelow
+set splitright
 
 "Load all plugins
 call plug#begin('~/.vim/plugged')
@@ -34,13 +51,24 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/MatchTag'
 Plug 'airblade/vim-gitgutter'
-Plug 'chriskempson/base16-vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'Haml'
 Plug 'airblade/vim-gitgutter'
 Plug 'shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-fugitive'
+Plug 'joshdick/airline-onedark.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'othree/yajs.vim'
+Plug 'isRuslan/vim-es6'
+Plug 'digitaltoad/vim-jade'
+Plug 'jbgutierrez/vim-babel'
+Plug 'mattn/webapi-vim'
+Plug 'posva/vim-vue'
+Plug 'tacahiroy/ctrlp-funky'
+Plug 'Raimondi/delimitMate'
+
 
 call plug#end()
 
@@ -49,4 +77,25 @@ autocmd VimEnter * NERDTree
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:neocomplete#enable_at_startup = 1
 
-colorscheme base16-default
+let g:onedark_termcolors=16
+colorscheme onedark
+
+autocmd BufNewFile,BufRead *.js.es6   set syntax=javascript
+
+set noshowmode
+set laststatus=2
+let g:airline_powerline_fonts=1
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline_skip_empty_sections=1
+
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+nnoremap <c-r> :CtrlPFunky<Cr>
+
+let g:ctrlp_funky_syntax_highlight = 1

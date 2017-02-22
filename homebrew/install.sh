@@ -19,4 +19,5 @@ then
   brew cask install font-hack
   brew cask install font-fira-code
   brew cask install font-meslo-lg-for-powerline
+  brew install yawn
 fi
