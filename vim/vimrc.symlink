@@ -32,6 +32,7 @@ set showtabline=2
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|public\'
+let g:ctrlp_max_files=0
 
 let g:neocomplcache_enable_at_startup = 1
 
@@ -84,7 +85,6 @@ autocmd BufNewFile,BufRead *.js.es6   set syntax=javascript
 
 set noshowmode
 set laststatus=2
-let g:airline_powerline_fonts=1
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 let g:airline_skip_empty_sections=1
 
@@ -96,6 +96,12 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+nnoremap U <C-R>
 nnoremap <c-r> :CtrlPFunky<Cr>
+nnoremap <C-Right> :vertical resize +5<Cr>
+nnoremap <C-Left> :vertical resize -5<Cr>
+nnoremap <C-Up> :res +5<Cr>
+nnoremap <C-Down> :res -5<Cr>
 
 let g:ctrlp_funky_syntax_highlight = 1
+let NERDTreeShowHidden = 1
