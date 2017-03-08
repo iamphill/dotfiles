@@ -105,3 +105,5 @@ nnoremap <C-Down> :res -5<Cr>
 
 let g:ctrlp_funky_syntax_highlight = 1
 let NERDTreeShowHidden = 1
+
+set timeoutlen=1000 ttimeoutlen=0
