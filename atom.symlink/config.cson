@@ -4,38 +4,56 @@
       "vim-mode"
       "git-projects"
       "travis-ci-status"
-      "linter-scss-lint"
-      "linter-eslint"
-      "vim-mode-plus"
+      "gitlab-ci-status"
     ]
     projectHome: "/Users/phil/Projects"
     telemetryConsent: "limited"
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
-    fontFamily: "SF Mono"
-    fontSize: 12
+    fontSize: 13
     invisibles: {}
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
     userId: "ea0e704d-8f7a-2151-9e47-75acc3738dc9"
   "file-icons": {}
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  "git-plus":
+    experimental:
+      useSplitDiff: true
   "git-projects":
     rootPath: "/Users/phil/Projects"
     sortBy: "Latest modification date"
   "gitlab-ci-status":
     privateToken: "9TyzuxBRBti1vijWD2o_"
-  linter:
-    lintOnFly: false
+  linter: {}
+  "linter-eslint": {}
+  "linter-haml": {}
+  "linter-rubocop":
+    command: "bundle exec rubocop"
+    disableWhenNoConfigFile: true
   "linter-scss-lint":
     disableWhenNoConfigFileInPath: true
+  "linter-ui-default":
+    panelHeight: 69
   "merge-conflicts": {}
   minimap:
     plugins:
       "git-diff": true
   "one-dark-ui": {}
+  "prettier-atom":
+    formatOnSaveOptions: {}
+    prettierOptions:
+      singleQuote: true
+      trailingComma: "all"
+    useEslint: true
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    syncHorizontalScroll: true
   tabs:
     enableMruTabSwitching: false
     enableVcsColoring: true
@@ -43,6 +61,7 @@
     iconSize: "16px"
     position: "Left"
   "tool-bar-almighty": {}
+  "tree-view": {}
   "vim-mode-plus":
     ignoreCaseForSearch: true
   welcome:

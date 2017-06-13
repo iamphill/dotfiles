@@ -13,14 +13,13 @@ set tabstop=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set linespace=1
-set guifont=Hack:h14
+set linespace=6
+set guifont=SF\ Mono\ Medium:h12
 set background=dark
 set mousemodel=extend
 set updatetime=250
 set backspace=2
 set wildignore+=*\\node_modules\\**
-:set colorcolumn=100
 
 "MacVim config
 set guioptions-=r
@@ -46,30 +45,23 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
-Plug 'Shougo/neocomplete.vim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bling/vim-airline'
-Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/MatchTag'
-Plug 'airblade/vim-gitgutter'
-Plug 'kchmck/vim-coffee-script'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'Haml'
 Plug 'airblade/vim-gitgutter'
-Plug 'shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-fugitive'
 Plug 'joshdick/airline-onedark.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'othree/yajs.vim'
 Plug 'isRuslan/vim-es6'
 Plug 'digitaltoad/vim-jade'
 Plug 'jbgutierrez/vim-babel'
-Plug 'mattn/webapi-vim'
 Plug 'posva/vim-vue'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'Raimondi/delimitMate'
-
+Plug 'shougo/neocomplete.vim'
 
 call plug#end()
 
@@ -107,3 +99,15 @@ let g:ctrlp_funky_syntax_highlight = 1
 let NERDTreeShowHidden = 1
 
 set timeoutlen=1000 ttimeoutlen=0
+
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif

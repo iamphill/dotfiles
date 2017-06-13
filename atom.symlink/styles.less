@@ -5,3 +5,24 @@ atom-text-editor {
 .tree-view-resizer {
   min-width: 250px;
 }
+
+atom-text-editor {
+  font-family: "Operator Mono";
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+atom-text-editor.editor .syntax--comment,
+.syntax--variable.syntax--language,
+.syntax--entity.syntax--attribute-name.syntax--html,
+.syntax--haml.syntax--attributes .syntax--hashkey,
+.syntax--haml.syntax--attributes .syntax--string {
+  font-style: italic;
+}
+
+.syntax--haml.syntax--attributes .syntax--key-value + .syntax--string,
+.syntax--haml.syntax--attributes .syntax--separator + .syntax--string,
+.syntax--haml.syntax--attributes .syntax--punctuation,
+.syntax--haml.syntax--attributes .syntax--quoted {
+  font-style: normal;
+}
