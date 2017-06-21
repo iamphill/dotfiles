@@ -5,6 +5,7 @@
       "git-projects"
       "travis-ci-status"
       "gitlab-ci-status"
+      "linter-haml"
     ]
     projectHome: "/Users/phil/Projects"
     telemetryConsent: "limited"
@@ -61,7 +62,8 @@
     iconSize: "16px"
     position: "Left"
   "tool-bar-almighty": {}
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     ignoreCaseForSearch: true
   welcome:

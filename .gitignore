@@ -7,5 +7,6 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 atom.symlink/blog-store
+atom.symlink/github.cson
 
 tmp/
