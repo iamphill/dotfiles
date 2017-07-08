@@ -39,7 +39,7 @@
   "linter-scss-lint":
     disableWhenNoConfigFileInPath: true
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 99
   "merge-conflicts": {}
   minimap:
     plugins:
@@ -56,14 +56,15 @@
     ignoreWhitespace: true
     syncHorizontalScroll: true
   tabs:
+    alwaysShowTabBar: false
     enableMruTabSwitching: false
     enableVcsColoring: true
+    showIcons: false
   "tool-bar":
     iconSize: "16px"
     position: "Left"
   "tool-bar-almighty": {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "vim-mode-plus":
     ignoreCaseForSearch: true
   welcome:

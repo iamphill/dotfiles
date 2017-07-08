@@ -18,7 +18,8 @@ atom-text-editor.editor .syntax--comment,
 .syntax--haml.syntax--attributes .syntax--hashkey,
 .syntax--haml.syntax--attributes .syntax--string,
 .syntax--control.syntax--module.syntax--js,
-.syntax--parameters {
+.syntax--parameters .syntax--variable,
+.syntax--css .syntax--string {
   font-style: italic;
 }
 
@@ -33,4 +34,18 @@ atom-text-editor.editor .syntax--comment,
 #status-bar-vim-mode-plus-container,
 .line-ending-tile {
   display: none;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  will-change: opacity;
+
+  &:hover {
+    opacity: 1;
+  }
 }

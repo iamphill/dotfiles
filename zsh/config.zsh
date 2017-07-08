@@ -1,10 +1,7 @@
-ZSH_THEME="avit"
+ZSH_THEME="iamphill"
 
 DEFAULT_USER="phil"
 
 ENABLE_CORRECTION="false"
 
 KEYTIMEOUT=1
-
-BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
