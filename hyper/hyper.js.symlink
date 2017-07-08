@@ -19,7 +19,7 @@ module.exports = {
     borderColor: '#333',
 
     // custom css to embed in the main window
-    css: `
+    /*css: `
       .hyper_main {
         border-width: 2px!important;
         border-image: linear-gradient(#FF2E88, #f8b92c) 1!important;
@@ -51,7 +51,7 @@ module.exports = {
         transform: scale(2.2);
         transform-origin: 0 center;
       }
-    `,
+    `,*/
 
     // custom padding
     padding: '12px 14px',
