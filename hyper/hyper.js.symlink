@@ -7,6 +7,8 @@ module.exports = {
     fontFamily: '"SF Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color (hex)
+    cursorShape: 'UNDERLINE',
+    cursorBlink: true,
     cursorColor: '#F81CE5',
 
     // color of the text
@@ -19,10 +21,10 @@ module.exports = {
     borderColor: '#333',
 
     // custom css to embed in the main window
-    /*css: `
+    /* css: `
       .hyper_main {
         border-width: 2px!important;
-        border-image: linear-gradient(#FF2E88, #f8b92c) 1!important;
+        border-color: #FF2E88!important;
       }
 
       .hyper_main .header_header {
@@ -36,22 +38,17 @@ module.exports = {
         display: none;
       }
 
-      .borderShim_nfs {
-        border-color: transparent!important;
-      }
-
       .term_fit.term_active {
         padding: 25px 40px!important;
       }
-    `,
+    `, */
 
     // custom padding (css format, i.e.: `top right bottom left`)
     termCSS: `
-      .unicode-node:first-child {
-        transform: scale(2.2);
-        transform-origin: 0 center;
+      .cursor-node {
+        border-color: #FF2E88!important
       }
-    `,*/
+    `,
 
     // custom padding
     padding: '12px 14px',
