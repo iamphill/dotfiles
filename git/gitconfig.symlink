@@ -1,6 +1,7 @@
 [user]
 	name = Phil Hughes
 	email = me@iamphill.com
+	signingkey = DB8CE4B3A3EE91AB
 
 [alias]
   lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -28,3 +29,5 @@
   frag = magenta bold
   old = red bold
   new = green bold
+[commit]
+	gpgsign = true
